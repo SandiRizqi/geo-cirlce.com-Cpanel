@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Geo-Artificial Intelligence for Environment</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/css/indexstyle.css" media="all">
+     <link rel="stylesheet" type="text/css" href="/static/css/animstyle.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+    
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</head>
+<style>
+
+.card-body {
+  text-align: center;
+}
+  
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 0px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(90deg,  #abebc6  , #27ae60 );
+    width: 100%;
+}
+
+.dropdown-menu {
+    font-size: 15px;
+    margin: 0px;
+    font-weight: 500;
+    background: #70cf99;
+}
+.dropdown-item {
+    font-size: 15px;
+    color: #fff!important;
+    margin: 0px;
+    font-weight: 500;
+    background: #70cf99 ;
+}
+
+.dropdown-menu: hover {
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-item: hover {
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+</style>
+
+<body>
+    <header>
+    <!--Header-->
+        <div class="menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+                  <a class="navbar-brand" href="#"><img src="/static/images/logo.png" alt="logo" href="/"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Satellite Imagery
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/login.php">Project Orders</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="/Satellite.html">Products Gallery</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/geoai.html">Geo-Artificial Intelligence </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://api.whatsapp.com/send/?phone=6282170829587&text&app_absent=0">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+          </nav>
+        </div>
+        
+        
+        
+    
+        <!--Thumbalias-->
+        <div class="container gallery-container">
+
+          <h1 style="margin-top: 130px;"></h1>
+          <div class="tz-gallery">
+      
+              <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/PLIADES/PLEIADES_BENGKULU.png">
+                          <img src="/static/images/CITRA/PLIADES/PLEIADES_BENGKULU.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Pleiades</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 0.5m, dan etc</p>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/PLIADES/PLEIADES_BCA.png">
+                          <img src="/static/images/CITRA/PLIADES/PLEIADES_BCA.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Pleiades</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 0.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/PLIADES/PLEIADES_PSM.png">
+                          <img src="/static/images/CITRA/PLIADES/PLEIADES_PSM.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Pleiades</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 0.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_PSM.png">
+                          <img src="/static/images/CITRA/SPOT/SPOT_PSM.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/PLIADES/PLEIADES_TMKI.png">
+                          <img src="/static/images/CITRA/PLIADES/PLEIADES_TMKI.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Pleiades</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 0.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_AJ.png">
+                          <img src="/static/images/CITRA/SPOT/SPOT_AJ.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/PSS/PSS_SUMSEL.png">
+                          <img src="/static/images/CITRA/PSS/PSS_SUMSEL.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Planet Scope</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 3m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_LO.png">
+                          <img src="/static/images/CITRA/SPOT/SPOT_LO.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_TT.png">
+                          <img src="/static/images/CITRA/SPOT/SPOT_TT.png" alt="Imagery">
+                      </a>
+                      <div class="card-body">
+                        <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                        <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/PLIADES/PLEIADES_PETRO.png">
+                        <img src="/static/images/CITRA/PLIADES/PLEIADES_PETRO.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra Pleiades</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 0.5m, dan etc</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_WSI.png">
+                        <img src="/static/images/CITRA/SPOT/SPOT_WSI.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_GJ.png">
+                        <img src="/static/images/CITRA/SPOT/SPOT_GJ.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_TIJ.png">
+                        <img src="/static/images/CITRA/SPOT/SPOT_TIJ.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_RH.png">
+                        <img src="/static/images/CITRA/SPOT/SPOT_RH.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="/static/images/CITRA/SPOT/SPOT_JL.png">
+                        <img src="/static/images/CITRA/SPOT/SPOT_JL.png" alt="Imagery">
+                    </a>
+                    <div class="card-body">
+                      <h6 style="font-weight: bold; font-size: 17px; text-align: center;">Citra SPOT7</h6>
+                      <p class="text-muted card-text">3 Bands(RGB)/4 Bands(RGBNir), Resolusi 1.5m, dan etc</p>
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+          baguetteBox.run('.tz-gallery');
+      </script>
+    </header>
+    
+
+
+
+
+    </body>
+
+    </html>
+    
