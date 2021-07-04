@@ -48,7 +48,7 @@ if($password != $password2){
     $mail->Host = 'mail.geo-circle.com'; // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true; // Enable SMTP authentication
     $mail->Username   = 'verification@geo-circle.com'; // SMTP username
-    $mail->Password   = 'gciindonesia'; // SMTP password
+    $mail->Password   = '********'; // SMTP password
     $mail->SMTPSecure = 'ssl';
     $mail->Port       =  465;  // TCP port to connect to
     $mail->setFrom('verification@geo-circle.com', 'Geocircle');
